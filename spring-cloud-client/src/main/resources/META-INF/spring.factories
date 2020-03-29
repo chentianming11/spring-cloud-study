@@ -1,2 +1,2 @@
 org.springframework.cloud.bootstrap.BootstrapConfiguration=\
-com.chen.study.springcloud.client.SpringCloudApplication.MyPropertySourceLoader
+com.chen.study.springcloud.client.SpringCloudClientApplication.MyPropertySourceLoader
