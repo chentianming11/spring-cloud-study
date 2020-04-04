@@ -27,7 +27,7 @@ public class UserProxyService implements UserService{
     @Override
     public boolean save(User user) {
         User returnValue = restTemplate
-                .postForObject(PROVIDER_SERVER_URL_PREFIX + "/save/user", user, User.class);
+                .postForObject(PROVIDER_SERVER_URL_PREFIX + "/user/save", user, User.class);
         return returnValue != null;
     }
 
@@ -38,6 +38,6 @@ public class UserProxyService implements UserService{
      */
     @Override
     public Collection<User> findAll() {
-        return restTemplate.getForObject(PROVIDER_SERVER_URL_PREFIX + "list", Collection.class);
+        return restTemplate.getForObject(PROVIDER_SERVER_URL_PREFIX + "/user/list", Collection.class);
     }
 }
